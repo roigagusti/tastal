@@ -10,7 +10,7 @@
     "@turf/turf": "^6.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-mapbox-gl": "^7.0.1",
+    "react-mapbox-gl": "7.0.21",
     "react-query": "^3.39.3",
     "react-router-dom": "^6.8.1",
     "react-scripts": "5.0.1",
