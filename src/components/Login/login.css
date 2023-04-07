@@ -1,0 +1,231 @@
+/*
+* Title: Tastal
+* Author: Aldasoro
+* Template: Tastal React
+* Version: 0.2.2
+* Copyright 2023 Aldasoro Inc.
+* Url: https://www.tastal.ml
+
+
+Content table
+--------------
+1. Login
+2. Access Footer
+3. Access Unsplash
+
+
+/* ----- 1. Login ----- */
+.login{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0px;
+  position: relative;
+  z-index: 1;
+  width: 400px;
+  margin-left:auto;
+  margin-right: auto;
+}
+.rememberMe {
+  position: relative;
+  font-size: 13px;
+  color: #666;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+.rememberMe input[type="checkbox"] {
+  height: 15px;
+  display: inline-block;
+  position: relative;
+  width: auto;
+  margin-right: 10px;
+  top: 3px;
+}
+.logo{
+  width: 100%;
+  text-align: center;
+  margin-top:100px;
+}
+.logo img{
+  width:150px;
+  -webkit-filter: drop-shadow(0px 0px 15px #000);
+  filter: drop-shadow(0px 0px 15px #000); 
+}
+.logo-light{
+  display:none;
+}
+.logo-dark{
+  display:initial;
+}
+.box{
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+}
+.box-shadow{
+  box-shadow: 0 7px 14px 0 rgba(60,66,87,.08), 0 3px 6px 0 rgba(0,0,0,.12);
+}
+.box-login{
+  margin-top: 50px;
+  padding:40px;
+  padding-bottom:50px;
+}
+.login-title{
+  width: 100%;
+  text-align: left;
+  color: #000;
+  font-size: 18px;
+}
+.login-input{
+  margin-top:20px;
+  text-align: left;
+}
+.box label{
+  margin-bottom:5px;
+  color:#999;
+  font-size:14px;
+  width: 100%;
+  font-weight: 300;
+}
+.box input{
+  border: solid 1px #dcdcdc;
+  margin-top:5px;
+  margin-bottom:15px;
+  color:#999;
+  font-size:14px;
+  height: 40px;
+  border-radius:4px;
+  box-sizing: border-box;
+  width: 100%;
+  padding-left:15px;
+}
+.label-pass{
+  display: inline-block;
+  width: 40%;
+  text-align: left;
+}
+.label-forgot{
+  display: inline-block;
+  width: 60%;
+  text-align: right;
+}
+.label-forgot a{
+  color:#f7452e;
+}
+.box button{
+  display: inline-block;
+  padding: 6px 12px;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-radius: 4px;
+}
+.btn-acces{
+  height: 40px;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: 'Segoe UI', 'Roboto','Helvetica','Myriad Set Pro','Lucida Grande','Helvetica Neue','Helvetica','Arial','Verdana',serif;
+  width: 100%;
+  margin-bottom:10px;
+  background: #f7452e;
+  color: #fff; 
+}
+.btn-fb{
+  font-size: 15px;
+  font-weight: 500;
+  font-family: 'Segoe UI', 'Roboto','Helvetica','Myriad Set Pro','Lucida Grande','Helvetica Neue','Helvetica','Arial','Verdana',serif;
+  width: 100%;
+  background: #fff;
+  border:1px solid #385898;
+  color: #385898;
+  display: inherit;
+  border-radius: 4px;
+  text-align: center;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+.forgot-notice{
+  width: 100%;
+  text-align: left;
+  color: #333;
+  font-size: 14px;
+  font-weight: 300;
+}
+.alert-zone{
+  margin-top:25px;
+  text-align: center;
+  font-size: 14px;
+  color:#333;
+}
+.alert-zone a{
+  color: #f7452e;
+}
+.alert-zone > .login{
+  margin-bottom:20px;
+}
+.alert-zone > .register{
+  margin-bottom:20px;
+}
+.alert-zone  > .register a{
+  color:#f7452e;
+}
+.alert-zone > .login{
+  margin-bottom:20px;
+  color:#fff;
+  text-shadow: 0 0px 20px #000;
+}
+.alert-zone  > .login a{
+  color:#f7452e;
+}
+
+/* ----- 3. Access Footer ----- */
+.access-footer{
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  color:rgba(255,255,255,0.6);
+  position: fixed;
+  bottom: 25px;
+  left:0;
+}
+.access-footer a{
+  color:rgba(255,255,255,0.6);
+  margin-left:10px;
+  margin-right:10px;   
+}
+.access-footer a:hover{
+  color:rgba(255,255,255,0.4);
+}
+
+/* ----- 3. Access Unsplash ----- */
+.unsplash{
+  position: fixed;
+  bottom: 25px;
+  left: 25px;
+  color:rgba(255,255,255,0.8);
+  z-index:5;
+  font-size: 14px;
+}
+.unsplash a{
+  color:rgba(255,255,255,0.6);
+}
+.unsplash a:hover{
+  color:rgba(255,255,255,1.0);
+}

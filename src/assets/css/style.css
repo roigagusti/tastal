@@ -1,0 +1,184 @@
+/*
+* Title: Tastal
+* Author: Aldasoro
+* Template: Tastal React
+* Version: 0.2.2
+* Copyright 2023 Aldasoro Inc.
+* Url: https://www.tastal.ml
+
+
+Content table
+--------------
+1. Fonts
+2. Basics
+3. Custom basics
+4. Margins i Paddings standard
+
+9. Browser
+
+
+/* ----- 1. Fonts ----- */
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,300,400,500);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500);
+@font-face {
+ font-family:Rubik;
+ font-style:normal;
+ font-weight:300;
+ font-display:swap;
+ src:local('Rubik Light'),
+ local('Rubik-Light'),
+ url(https://fonts.gstatic.com/s/rubik/v9/iJWHBXyIfDnIV7Fqj2md8WU.ttf) format('truetype')
+}
+@font-face {
+ font-family:Rubik;
+ font-style:normal;
+ font-weight:400;
+ font-display:swap;
+ src:local('Rubik'),
+ local('Rubik-Regular'),
+ url(https://fonts.gstatic.com/s/rubik/v9/iJWKBXyIfDnIV7nBrXk.ttf) format('truetype')
+}
+@font-face {
+ font-family:Rubik;
+ font-style:normal;
+ font-weight:500;
+ font-display:swap;
+ src:local('Rubik Medium'),
+ local('Rubik-Medium'),
+ url(https://fonts.gstatic.com/s/rubik/v9/iJWHBXyIfDnIV7Eyjmmd8WU.ttf) format('truetype')
+}
+@font-face {
+ font-family:Rubik;
+ font-style:normal;
+ font-weight:700;
+ font-display:swap;
+ src:local('Rubik Bold'),
+ local('Rubik-Bold'),
+ url(https://fonts.gstatic.com/s/rubik/v9/iJWHBXyIfDnIV7F6iGmd8WU.ttf) format('truetype')
+}
+
+/* ------- 2. Basics ------*/
+body,html{
+  padding:0px;
+  height:100%;
+  margin:0px;
+  width:100%;
+  font-family: Raleway,Helvetica,Arial,sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  z-index: 0;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+}
+body.access{
+  height:100%;
+  margin:0;
+  font-family: 'Segoe UI', 'Rubik','Roboto','Helvetica','Myriad Set Pro','Lucida Grande','Helvetica Neue','Arial','Verdana',serif;
+  background: url('https://source.unsplash.com/featured/?food');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color:#dcdcdc;
+  font-weight: normal;
+}
+@keyframes gradient {
+  0% {background-position: 0%}
+  100% {background-position: 100%}
+}
+a{
+  text-decoration:none;
+  cursor: pointer;
+}
+a:hover{
+  text-decoration: none;
+  cursor: pointer;
+}
+ul{
+  margin: 0px;
+  padding: 0px;
+}
+select, input[type="text"],input[type="email"],input[type="number"],input[type="password"]{
+    -webkit-appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+/* ------- 3. Custom basics ------*/
+.hidden{
+  display: none !important;
+}
+.center{
+  text-align: center;
+}
+.left{
+  text-align: left;
+}
+.text-justify{
+  text-align: justify;
+}
+.content{
+  width:100%;
+}
+.shadow{
+  box-shadow: 0 7px 14px 0 rgba(60,66,87,.08), 0 3px 6px 0 rgba(0,0,0,.12);
+}
+.disabled{
+  opacity: 0.6;
+  pointer-events: none;
+}
+.fail,.success{
+    font-family: 'Segoe UI', 'Rubik','Roboto','Helvetica','Myriad Set Pro','Lucida Grande','Helvetica Neue','Arial','Verdana',serif;
+    font-size: 14px;
+    text-align:center;
+}
+.fail{
+    color: rgb(165,0,0);    
+}
+.success{
+    color: rgb(0,165,0);    
+}
+.box-shadow{
+    box-shadow: 0 7px 14px 0 rgb(60 66 87 / 8%), 0 3px 6px 0 rgb(0 0 0 / 12%);
+}
+
+/* ------- 4. Margins i Paddings standard ------*/
+.pt5{
+  padding-top:5px;
+}
+.pt10{
+  padding-top:10px;
+}
+.pt15{
+  padding-top:15px;
+}
+.pt20{
+  padding-top:20px;
+}
+.pt30{
+  padding-top:30px;
+}
+
+
+
+
+
+/* ------- 9. Browser ------*/
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

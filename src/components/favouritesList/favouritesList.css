@@ -1,0 +1,157 @@
+/*
+* Title: Tastal
+* Author: Aldasoro
+* Template: Tastal React
+* Version: 0.2.2
+* Copyright 2023 Aldasoro Inc.
+* Url: https://www.tastal.ml
+
+
+Content table
+--------------
+1. FavouritesList
+
+
+/* ----- 1. FavouritesList ----- */
+.fav-card{
+    width: 100%;
+    z-index: 4;
+    background-color: #fff;
+    position: absolute;
+    top:80vh;
+    min-height: 20vh;
+    border-radius: 15px;
+}
+.nav-line{
+    width: 100%;
+    text-align: center;
+    margin-top:0px;
+}
+.nav-line svg{
+    fill:#bbb;
+    width:30px;    
+}
+.fav-content{
+    margin-right:20px;
+    margin-left:20px;
+    margin-bottom:90px;
+}
+.fav-content h1{
+    font-size:18px;
+    font-weight: 700;
+    color:#333;
+    margin:0;
+}
+.fav-content h2{
+    font-size:14px;
+    font-weight: 700;
+    color:#333;
+    margin:0;
+    margin-top:25px;
+    margin-bottom:-10px;
+}
+.fav-nav{
+    margin-top:15px;
+}
+.fav-nav ul{
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
+.fav-nav a{
+    text-decoration: none;
+    color:#999;
+    cursor: pointer;
+}
+.fav-nav li{
+    display: inline;
+    margin-right: 20px;
+    padding-bottom:5px;
+}
+.fav-nav .active{
+    color:#333;
+    font-weight: 700;
+    border-bottom: 2px solid rgb(247,69,46);
+}
+
+.rest-list{
+    list-style: none;
+    margin:0;
+    margin-top:20px;
+    padding: 0;    
+}
+.rest-list a{
+    text-decoration: none;
+    color:#333;
+}
+.rest-item{
+    margin-bottom:10px;
+    display: flex;
+}
+.rest-info{
+    width: 100%;
+    text-align: left;
+}
+.rest-info a{
+    cursor: pointer;
+}
+.rest-name{
+    font-weight: 700;
+}
+.rest-location{
+    font-size:11px;
+}
+.rest-data{
+    float:right;
+    text-align: right;
+    width:50px;
+}
+.rest-distance{
+    font-size: 11px;
+    color:#999;
+    margin-top:15px;
+}
+.rest-edit{
+    width:40px;  
+    text-align: right;
+    margin-top:5px;
+}
+.rest-edit a{
+    color:#333; 
+    text-decoration: none;  
+    text-align: right;  
+}
+.rest-edit svg, .user-edit svg{
+    fill:#999;
+    width: 12px;
+}
+.empty-list{
+    color:#999;
+}
+.empty-list a{
+    color:#999;
+}
+.edit-list{
+    font-size: 11px;
+    margin-top:20px;    
+}
+.edit-list a{
+    color:#999;
+    text-decoration: none;
+}
+.add-list{
+    margin-bottom:15px;
+}
+.add-list svg{
+    width: 10px;
+    color: #aaa;
+    top: 2px;
+    position: relative;
+}
+.label-add-list{
+    width: auto;
+    display: inline;
+    margin-left: 3px;
+    font-weight: 700;
+    color:#aaa;
+}

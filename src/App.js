@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route, useLocation } from "react-router-dom"
+import React, { useEffect } from 'react';
+import Login from "./pages/login"
+import Discover from "./pages/discover"
+import Favourites from "./pages/favourites"
+import Profile from "./pages/profile"
+import Prova from "./pages/prova"
 
 function App() {
+  const location = useLocation();
+  useEffect(() => {
+    const body = document.body;
+    if(location.pathname === '/login'){
+      body.classList.add('access');
+    }else{
+      body.classList.remove('access');
+    }
+  }, [location.pathname]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Routes>
+      <Route path="login" element={ <Login/> } />
+      <Route path="discover" element={ <Discover/> } />
+      <Route path="favourites" element={ <Favourites/> } />
+      <Route path="profile" element={ <Profile/> } />
+      <Route path="prova" element={ <Prova /> } />
+    </Routes>
+  )
 }
 
-export default App;
+export default App

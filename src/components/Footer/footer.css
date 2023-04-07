@@ -1,0 +1,94 @@
+/*
+* Title: Tastal
+* Author: Aldasoro
+* Template: Tastal React
+* Version: 0.2.2
+* Copyright 2023 Aldasoro Inc.
+* Url: https://www.tastal.ml
+
+
+Content table
+--------------
+1. Footer
+
+
+/* ----- 1. Footer ----- */
+.prefooter{
+    height: 40px;
+    margin-top:40px;
+    margin-bottom:90px;
+}
+.prefooter img{
+    height: 17px;
+}
+.footer{
+    -moz-box-align: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-top: 1px solid rgb(221, 221, 221);
+    bottom: 0px;
+    padding-bottom:20px;
+    height: 50px;
+    left: 0px;
+    overflow: hidden;
+    position: fixed;
+    right: 0px;
+    z-index: 5;
+    transition: -ms-transform 0.2s cubic-bezier(0, 0, 0.1, 1) 0s, transform 0.2s cubic-bezier(0, 0, 0.1, 1) 0s, transform 0.2s cubic-bezier(0, 0, 0.1, 1) 0s, visibility 0s ease 0s;
+}
+.f_01{
+    -moz-box-pack: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    margin: 0px auto;
+    max-width: 560px;
+}
+.f_label{
+    font-size: 10px;
+    line-height: 12px;
+    max-height: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -moz-box-orient: vertical;
+    font-weight: 300;
+    overflow-wrap: break-word;
+}
+.f_actiu{
+    color: rgb(247,69,46) !important;
+}
+.f_item{
+    -moz-box-pack: center;
+    -moz-box-direction: normal;
+    -moz-box-orient: vertical;
+    -moz-box-align: center;
+    outline: currentcolor none medium;
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #333;
+    display: flex;
+    flex: 1 1 0px;
+    flex-direction: column;
+    hyphens: auto;
+    justify-content: center;
+    max-width: 20%;
+    min-width: 0px;
+    padding: 0px 2px;
+    text-align: center;
+    text-decoration: none;
+}
+.f_item svg{
+    height: 100%;
+    width: 100%;
+    display: block;
+    overflow: visible;
+}
+.f_02{
+    height: 24px;
+    margin-bottom: 2px;
+    padding: 0px;
+    width: 24px;
+}

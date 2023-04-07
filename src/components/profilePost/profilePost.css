@@ -1,0 +1,125 @@
+/*
+* Title: Tastal
+* Author: Aldasoro
+* Template: Tastal React
+* Version: 0.2.2
+* Copyright 2023 Aldasoro Inc.
+* Url: https://www.tastal.ml
+
+
+Content table
+--------------
+1. Profile post
+
+
+/* ----- 1. Profile post ----- */
+.admin{
+    width:40px;
+    float:left;
+    text-align: left;
+    margin-left:15px;
+    margin-top:12px;
+    position: fixed;
+  }
+  .admin svg{
+    fill:#ccc;
+    stroke:none;
+    width:22px;
+  }
+  .add-friend{
+    width:40px;
+    float:right;
+    text-align: right;
+    right:15px;
+    top:12px;
+    position: absolute;
+  }
+  .add-friend svg{
+    color:#ccc;
+    width:18px;
+  }
+  .profile-info{
+    width: 100%;
+    text-align: center;
+    padding-top:90px;
+  }
+  .profile-photo{
+    border-radius: 50%;
+    width:150px;
+    height:150px;
+    margin-right: auto;
+    margin-left: auto;   
+  }
+  .photo-cover{
+    opacity: 0.3;
+    background: linear-gradient(45deg,#f7452e,#ff8f54);
+    background-size: auto;
+    background-size: 200% 100%;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    z-index: 4;
+  }
+  .profile-name{
+    margin-top:10px;
+    font-size: 16px;
+    font-weight: 700;
+    color:#333;
+  }
+  .status-counter{
+    width: 265px;
+    display: inline-flex;
+    margin-top:40px;
+  }
+  .status-restaurants, .status-followers, .status-following{
+    width: 33%;
+    text-align: center;
+  }
+  .status-number{
+    font-size:16px;
+    font-weight: 700;
+    color:#333;
+  }
+  .status-name{
+    font-weight: 500;
+    color:#333;
+  }
+  .profile-posts{
+    margin-top:30px;
+    border-top:1px solid #dcdcdc;
+    display: grid;
+    grid-template-rows: 33.33vw 33.33vw 33.33vw;
+    grid-template-columns: 33.33vw 33.33vw 33.33vw;
+    width: 100%;
+  }
+  .image-post{
+    display: grid;
+    justify-content: center;
+    box-sizing: border-box;
+    border-left:1.5px solid #fff;
+    border-right:1.5px solid #fff;
+    border-bottom:3px solid #fff;
+    align-items: center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    cursor:pointer;
+  }
+  .alert-no-posts{
+    margin-top:30px;
+    border-top:1px solid #dcdcdc;
+    width: 100%;
+    text-align: center;
+    padding-top:50px;
+    color:#666;
+  }
+  .user-img{
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+  }
+  .post-img{
+    width: 100vw;
+  }
+  .profile-photo{
+    background-repeat: no-repeat;background-size: cover;cursor:pointer;
+  }

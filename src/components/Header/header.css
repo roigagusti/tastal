@@ -1,0 +1,172 @@
+/*
+* Title: Tastal
+* Author: Aldasoro
+* Template: Tastal React
+* Version: 0.2.2
+* Copyright 2023 Aldasoro Inc.
+* Url: https://www.tastal.ml
+
+
+Content table
+--------------
+1. Header. Descubrir
+2. Header. Favoritos
+
+
+/* ----- 1. Header. Descubrir ----- */
+.header,.header-search{
+    width: 100%;
+    margin:0;
+    padding:0;
+    height: 45px;
+    background-color: #fff;
+    border-bottom:1px solid rgb(221,221,221);
+    text-align: center;
+    position: fixed;
+    z-index:5;
+}
+.add-photo{
+    width:40px;
+    float:left;
+    text-align: left;
+    margin-left:15px;
+    margin-top:12px;
+    position: fixed;
+    cursor: pointer;
+}
+.add-photo svg{
+    fill:#dcdcdc;
+    width:22px;
+}
+.atras{
+    width:40px;
+    float:left;
+    text-align: left;
+    margin-left:15px;
+    margin-top:10px;
+    position: fixed;
+    cursor: pointer;
+}
+.atras svg{
+    fill:#dcdcdc;
+    height: 28px;
+}
+.index-logo{
+    width: 100%;
+}
+.index-logo > img{
+    height: 25px;
+    margin-top:12px;
+}
+.search{
+    width: 40px;
+    float: left;
+    text-align: left;
+    left: 15px;
+    top: 12px;
+    position: absolute;
+    z-index:6;
+}
+.search a{
+    cursor: pointer;
+}
+.search svg{
+    color:#ccc;
+    width:20px;
+}
+.settings{
+    width:40px;
+    float:left;
+    text-align: left;
+    margin-left:15px;
+    margin-top:12px;
+    position: fixed;
+}
+.settings svg{
+    fill:#ccc;
+    stroke:none;
+    width:22px;
+}
+
+/* ----- 2. Header. Favoritos ----- */
+.search{
+    width: 40px;
+    float: left;
+    text-align: left;
+    left: 15px;
+    top: 12px;
+    position: absolute;
+    z-index:6;
+}
+.search a{
+    cursor: pointer;
+}
+.search svg{
+    color:#ccc;
+    width:20px;
+}
+.close{
+    width: 40px;
+    float: right;
+    text-align: right;
+    right: 15px;
+    top: 10px;
+    position: absolute;
+    z-index:6;
+}
+.close a{
+    cursor:pointer;
+}
+.close svg{
+    color:#ccc;
+    width:15px;
+}
+.buscador{
+    top:0;
+    left: 0;
+    float: left;
+    text-align: left;
+    position: absolute;
+    z-index:5;
+    border:none;
+    width: 75%;
+    margin-left:50px;
+    height: 40px;
+    color:#999;
+}
+.resultats-query{
+    position: fixed;
+    top: 46px;
+    z-index: 5;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding-top:15px;
+}
+.resultats-llista{
+    margin-left:15px;
+    margin-right:15px;
+}
+.rest-save{
+    width:65px;  
+    text-align: right;
+    margin-top:5px;
+}
+.rest-save button{
+    display: inline-block;
+    padding: 0;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: none;
+    border: none;
+    color:rgb(247,69,46);
+    font-size: 11px;
+}
