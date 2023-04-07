@@ -8,7 +8,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "@turf/turf": "^6.5.0",
-    "react": "^18.2.0",
+    "react": "^16.2.0",
     "react-dom": "^18.2.0",
     "react-mapbox-gl": "5.1.1",
     "react-query": "^3.39.3",
@@ -18,7 +18,6 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "install": "npm install --force",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
