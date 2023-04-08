@@ -3,11 +3,20 @@ import { useState } from 'react';
 export default function Prova() {
   
   const [message, setMessage] = useState('');
+  const [enterPressed, setEnterPressed] = useState(false);
 
   const handleChange = (event) => {
-    // 👇 Get input value from "event"
     setMessage(event.target.value);
   };
+  function handleKeyPress(event) {
+    const tecla = event.key
+    if (tecla === "Enter") {
+      setEnterPressed(true);
+    }
+    if (tecla === "Backspace") {
+      setEnterPressed(false);
+    }
+  }
 
   return (
     <div>
@@ -16,9 +25,9 @@ export default function Prova() {
         id="message"
         name="message"
         onChange={handleChange}
+        onKeyDown={handleKeyPress}
       />
-
-      <h2>Message: {message}</h2>
+      {enterPressed && <h2>Message: {message}</h2>}
     </div>
   );
 }
