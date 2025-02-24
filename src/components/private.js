@@ -1,0 +1,2 @@
+const bearerToken = "tastal-4618a19d0fc1c6ee7f0ede6bb2fc4b5aa66d377a6396134c33d2aed1d795b65c";
+export default bearerToken;

@@ -1,4 +1,5 @@
 import React from 'react'
+import { ModalAddPhoto } from './modals/modalAddPhoto.js';
 
 
 function Image(props){
@@ -49,5 +50,19 @@ function MarkerIcon(){
     <svg class="markericon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
   )
 }
+function Modal(props){
+  let type = props.type
+  const styles = {
+    display: "inline-block"
+  };
+  return(
+    <div id={type} class="modal hidden" style={styles}>
+      {type === 'addPhoto' ? <ModalAddPhoto /> : null}
+      <a href="#close-modal" rel="modal:close" class="close-modal ">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+      </a>
+    </div>
+  )
+}
 
-export {Image, Like, ProfilePhoto, Logo, MarkerIcon};
+export {Image, Like, ProfilePhoto, Logo, MarkerIcon, Modal};

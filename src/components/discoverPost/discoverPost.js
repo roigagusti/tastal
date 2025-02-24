@@ -3,7 +3,7 @@ import {NavLink} from "react-router-dom";
 import { Image, Like } from '../tastal-items.js';
 import "./discoverPost.css"
 
-export const Post = (props) => {
+export const DiscoverPost = (props) => {
   let time = 'Hace 4 días'
   return (
     <div class="post">
@@ -38,4 +38,4 @@ export const Post = (props) => {
   )
 }
 
-export default Post;
+export default DiscoverPost;
